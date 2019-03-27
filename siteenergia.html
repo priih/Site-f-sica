@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Site de cálculo de energia elétrica</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js"></script>
+</head>
+
+<body>
+    <header class="titulo-principal">
+        <h1>Cálculo de Energia Elétrica</h1>
+    </header>
+
+    </head>
+
+    <body>
+        <div>
+            <img class="img-logo" src="imagens/LAMPADA.png">
+            <h1 class="texto">SEJA BEM VINDO!!</h1>
+
+        </div>
+            <div class="multiselecao">
+                <div class="selecionarBox">
+                    <p class="texto">Escolha o equipamento de sua residência</p>
+                    <select id="equipamento">
+                        <option>Selecione a opção</option>
+                        <option value="Aquecedor de ambiente">Aquecedor de ambiente</option>
+                        <option value="Aspirador de pó">Aspirador de pó</option>
+                        <option value="Batedeira">Batedeira</option>
+                        <option value="Bomba de água">Bomba de água</option>
+                        <option value="Cafeteira elétrica">Cafeteira elétrica</option>
+                        <option value="Churrasqueira elétrica">Churrasqueira elétrica</option>
+                        <option value="Chuveiro elétrico">Chuveiro elétrico</option>
+                        <option value="Computador">Computador</option>
+                        <option value="Condicionador de ar">Condicionador de ar</option>
+                        <option value="Aparelho de som">Aparelho de som</option>
+                        <option value="Ferro elétrico">Ferro elétrico</option>
+                        <option value="Espremedor de frutas">Espremedor de frutas</option>
+                        <option value="Fogão elétrico de 4 bocas">Fogão elétrico de 4 bocas</option>
+                        <option value="Forno elétrico pequeno">Forno elétrico pequeno</option>
+                        <option value="Forno elétrico grande">Forno elétrico grande</option>
+                        <option value="Forno de Micro-Ondas">Forno de Micro-Ondas</option>
+                        <option value="Freezer Horizontal">Freezer Horizontal</option>
+                        <option value="Freezer Vertical">Freezer Vertical</option>
+                        <option value="Geladeira Simples">Geladeira Simples</option>
+                        <option value="Grill">Grill</option>
+                        <option value="Impressora">Impressora</option>
+                        <option value="Liquidificador">Liquidificador</option>
+                        <option value="Máquina de custura">Máquina de custura</option>
+                        <option value="Máquina de lavar roupa">Máquina de lavar roupa</option>
+                        <option value="DVD Player">DVD Player</option>
+                        <option value="Secador de cabelo">Secador de cabelo</option>
+                        <option value="Secadora de roupas">Secadora de roupas</option>
+                        <option value="Televisor">Televisor</option>
+                        <option value="Ventilador">Ventilador</option>
+                        <option value="Vídeo Game">Vídeo Game</option>
+                    </select>
+                    <div class="Selecao"></div>
+                </div>
+                <div id="checkboxes">
+                    <p class="texto">Qual o tempo de uso do aparelho?</p>
+                    <input type="text" name="horas" id="tempo" placeholder="Digite o tempo em horas">
+                    <div class="center">
+                        <button class="botao-rosa" onclick="calcular()">Verificar</button>
+                    </div>
+                </div>
+            </div>
+        <div class="dados">
+            <div id="retorno" class="bloco">
+
+            </div>
+        </div>
+        <footer class="rodape">
+            <p class="valortotal">Valor total gasto: <span id="total">0.0</span></p>
+
+        </footer>
+    </body>
+
+</html>
